@@ -1,1 +1,3 @@
-# screenSharing_using_WebRTC_and_desktopCapture_API
+# Screen sharing inside the browser using desktopCapture API inside the Chromium engine and the WebRTC multi-level protocols.
+
+No extension is required for the viewer.
