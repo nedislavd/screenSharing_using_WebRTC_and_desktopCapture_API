@@ -1,16 +1,15 @@
-## [WebRTC plugin free screen sharing](https://github.com/muaz-khan/WebRTC-Experiment/tree/master/Pluginfree-Screen-Sharing) / [Demo](https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/)
+# Screen sharing inside the browser using desktopCapture API inside the Chromium engine and the WebRTC multi-level protocols.
+
+No extension is required for the viewer.
 
 Use your browser to share content of screen in High-Quality (HD) format with one or more users!
-
-**Firefox?** [Install Firefox Extension](https://www.webrtc-experiment.com/store/firefox-extension/enable-screen-capturing.xpi) / [Source Code](https://github.com/muaz-khan/Firefox-Extensions/tree/master/enable-screen-capturing)
 
 This WebRTC experiment uses a chrome extension:
 
 * https://chrome.google.com/webstore/detail/screen-capturing/ajhifddimkapgcifgcodmmfdlknahffk
 
-> Same [chrome extension](https://chrome.google.com/webstore/detail/screen-capturing/ajhifddimkapgcifgcodmmfdlknahffk) can be used in all your domains! You don't need to deploy yourself!
+> Same [chrome extension](https://chrome.google.com/webstore/detail/screen-capturing/ajhifddimkapgcifgcodmmfdlknahffk) can be used in all your domains! You don't need to deploy yourself!s
 
-Read more here: https://github.com/muaz-khan/WebRTC-Experiment/tree/master/Chrome-Extensions/desktopCapture
 
 =
 
@@ -207,7 +206,7 @@ function captureUserMedia(onStreamApproved) {
         return;
     }
 
-    // this statement sets gets 'sourceId" and sets "chromeMediaSourceId" 
+    // this statement sets gets 'sourceId" and sets "chromeMediaSourceId"
     if (DetectRTC.screen.chromeMediaSource == 'desktop') {
         screen_constraints.mandatory.chromeMediaSourceId = DetectRTC.screen.sourceId;
     }
@@ -306,4 +305,4 @@ Remember, you can use any signaling implementation exists out there without modi
 
 #### License
 
-[WebRTC plugin free screen sharing](https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/) experiment is released under [MIT licence](https://www.webrtc-experiment.com/licence/) . Copyright (c) [Muaz Khan](https://plus.google.com/+MuazKhan).
+[WebRTC plugin free screen sharing](https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/) experiment is released under [MIT licence](https://www.webrtc-experiment.com/licence/) .
