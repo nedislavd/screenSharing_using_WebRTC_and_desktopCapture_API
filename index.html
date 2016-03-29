@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebRTC Screen Sharing | Plugin-free ® JigsawMe</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="author" type="text/html" href="https://plus.google.com/+MuazKhan">
+        <meta name="author" content="Muaz Khan">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script>
+            document.createElement('article');
+            document.createElement('footer');
+        </script>
+
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ajhifddimkapgcifgcodmmfdlknahffk">
+    </head>
+
+    <body>
+        <article>
+            <!-- just copy this <section> and next script -->
+            <section class="experiment">
+                <section>
+                    <span>
+                        Private ?? <a href="/Pluginfree-Screen-Sharing/" target="_blank" title="Open this link for private screen sharing!"><code><strong id="unique-token">#123456789</strong></code></a>
+                    </span>
+                    <input type="text" id="room-name" placeholder="Your Name" disabled>
+                    <button id="share-screen" class="setup" disabled>Share Your Screen</button>
+                </section>
+
+                <!-- list of all available broadcasting rooms -->
+                <table style="width: 100%;" id="rooms-list"></table>
+
+                <!-- local/remote videos container -->
+                <div id="videos-container"></div>
+            </section>
+
+            <section class="experiment">
+                <h2>Prerequisites</h2>
+                <ol>
+                    <li>
+                        Chrome?
+                        <a href="https://chrome.google.com/webstore/detail/screen-capturing/ajhifddimkapgcifgcodmmfdlknahffk" target="_blank">Store</a>
+                        / <a href="https://github.com/muaz-khan/Chrome-Extensions/tree/master/desktopCapture">Source Code</a>
+                        /
+                        <button onclick="!!navigator.webkitGetUserMedia && !!window.chrome && !!chrome.webstore && !!chrome.webstore.install && chrome.webstore.install('https://chrome.google.com/webstore/detail/ajhifddimkapgcifgcodmmfdlknahffk', function() {location.reload();})" id="install-button" style="font-size:inherit; padding-bottom:0;">Click to Install</button>
+                    </li>
+
+                    <li>
+                        Firefox? <a href="https://addons.mozilla.org/en-US/firefox/addon/enable-screen-capturing/">Store</a> / <a href="https://github.com/muaz-khan/Firefox-Extensions/tree/master/enable-screen-capturing">Source Code</a> / <button onclick="intallFirefoxScreenCapturingExtension(); this.disabled = true;" style="font-size:inherit; padding-bottom:0;">Click to Install</button>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- scripts used for screen-sharing -->
+            <script src='js/vendor/firebase.js'> </script>
+            <script src='js/conference.js'> </script>
+
+
+        </article>
+    </body>
+</html>
